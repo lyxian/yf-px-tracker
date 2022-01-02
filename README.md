@@ -1,4 +1,4 @@
-# Yahoo-Fianace-Price-Tracker
+# Yahoo-Finance-Price-Tracker
 
 **Docker Command**
 docker build -t yf-px-tracker:1
