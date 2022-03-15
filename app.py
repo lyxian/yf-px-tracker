@@ -14,7 +14,7 @@ scheduler = BlockingScheduler(timezone='Asia/Singapore')
 trigger = OrTrigger([
     CronTrigger(second='*/10', day_of_week='mon-fri', minute='30-59', hour='21'),
     CronTrigger(second='*/10', day_of_week='mon-fri', hour='22-23'),
-    CronTrigger(second='*/10', day_of_week='tue-sat', hour='0-4')
+    CronTrigger(second='*/10', day_of_week='tue-sat', hour='0-3')
 ])
 
 scheduler.add_job(getMarketPrice, trigger=trigger, args=[TICKERS], name='getMarketPrice')
